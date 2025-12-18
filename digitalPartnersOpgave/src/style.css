@@ -23,3 +23,15 @@
   --spacingLrg: 48px;
   --spacingXL: 64px;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+        text-decoration: none;
+        color: #000000;
+        font-weight: 700;
+    }
