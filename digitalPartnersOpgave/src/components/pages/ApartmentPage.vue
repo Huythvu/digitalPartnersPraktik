@@ -12,9 +12,11 @@ import asideKort from '../apartment/ApartmentComponents/asideKort.vue';
 </script>
 
 <template>
-    <ImgSlider />
-    <main>
-        <div class="container">
+    <div class="imgSlider">
+        <ImgSlider />
+    </div>
+    <div class="container">
+        <main>
             <section>
                 <introInfo />
             </section>
@@ -27,20 +29,36 @@ import asideKort from '../apartment/ApartmentComponents/asideKort.vue';
             <section>
                 <omUdlejning />
             </section>
-            <aside>
-                <asideAgent />
-                <asideOmUdlejeren />
-                <asideKort />
-            </aside>
-        </div>
-    </main>
+        </main>
+        <aside>
+            <asideAgent />
+            <asideOmUdlejeren />
+            <asideKort />
+        </aside>
+    </div>
 </template>
 
 <style scoped>
-    main{
-        margin: 4rem;
-    }
-    section{
-        margin-bottom: 4rem;
-    }
+.imgSlider {
+    margin-bottom: 2rem;
+}
+
+.container {
+    display: flex;
+    gap: 4rem;
+
+    margin-inline: auto;
+    padding-inline: 64px;
+    max-width: 1920px;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 </style>
