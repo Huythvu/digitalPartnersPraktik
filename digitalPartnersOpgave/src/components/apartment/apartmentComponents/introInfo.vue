@@ -1,6 +1,9 @@
 <script setup>
 import { boliger } from "../../../data/data";
 import { ref } from "vue";
+
+// Simple save knap funktionalitet
+// Toggler  saved mellem true og false
 const saved = ref(false);
 const toggleSave = () => {
     saved.value = !saved.value;
@@ -12,7 +15,9 @@ const toggleSave = () => {
     <div class="introInfo">
         <div class="priceInfo">
             <h2>7.700 kr./md</h2>
-            <button :class="{ saved: saved }" @click="toggleSave">
+            <!-- Der toggler ved click og tilføjer/fjener classen gemt -->
+            <button :class="{ gemt: saved }" @click="toggleSave">
+                <!-- Ternary operator, fungerer ligesom if else -->
                 <span class="material-icons-outlined">{{ saved ? 'favorite' : 'favorite_border' }}</span>
                 <p>{{ saved ? 'Glem' : 'Gem' }}</p>
             </button>
@@ -64,7 +69,7 @@ button {
     border: none;
     transition: transform 1s ease-in-out;
 }
-button.saved span{
+button.gemt span{
     animation: pop 1s ease-in-out;
     color: red;
 }
