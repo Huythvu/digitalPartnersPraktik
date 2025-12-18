@@ -4,7 +4,7 @@ import { boliger } from "../../../data/data";
 
 <template>
     <div class="titleAndDesc">
-        <h1>{{ boliger.[0].title }}</h1>
+        <h1>{{ boliger[0].title }}</h1>
         <p>
             {{ boliger[0].desc }}
         </p>

@@ -28,8 +28,8 @@ import asideKort from '../apartment/ApartmentComponents/asideKort.vue';
                 <omUdlejning />
             </section>
             <aside>
-                <asideOmUdlejeren />
                 <asideAgent />
+                <asideOmUdlejeren />
                 <asideKort />
             </aside>
         </div>

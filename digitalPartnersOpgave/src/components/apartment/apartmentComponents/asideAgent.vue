@@ -12,7 +12,7 @@
 </template>
 
 <style scoped>
-.boligAgent{
+.boligAgent {
     background-color: var(--lightGrey);
     border-radius: 10px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -22,13 +22,14 @@
     align-items: center;
     gap: 2rem;
     width: 310px;
-
 }
-    .info{
+
+.info {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    }
+}
+
 button {
     background-color: var(--lightGolden);
     padding: 8px 16px;

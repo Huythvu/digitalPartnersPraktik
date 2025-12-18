@@ -7,7 +7,7 @@ import { boliger } from "../../../data/data";
         <div class="priceInfo">
             <h2>7.700 kr./md</h2>
             <i>
-                <span class="material-symbols-outlined">favorite</span>
+                <span class="material-icons-outlined">favorite_border</span>
                 <p>Gem</p>
             </i>
         </div>
