@@ -2,6 +2,14 @@ export const boliger = [
   {
     title: "2 værelses lejlighed i Aalborg Centrum",
     desc: "Drømmer du om at bo billigt i hjertet af Aalborg. Lille fin lejlighed midt i Aalborg i stille sidegade, men tæt på alt bylivet. Velegnet til rolig studerende. Indeholder stue, værelse, bad, nyrenoveret køkken. Vaskemaskine og tørretumbler. Aflåst opbevaringsrum og cykelrum i kælderen. Hyggelig gårdhave. Lejligheden overtages nymalet.",
+
+    images: [
+      "https://vl.studieboligaalborg.dk/GetImageEjendom.aspx?n=1718328&r=140&y=3807",
+      "https://vl.studieboligaalborg.dk/GetImageEjendom.aspx?n=1718333&r=140&y=3807",
+      "https://vl.studieboligaalborg.dk/GetImageEjendom.aspx?n=1718335&r=140&y=3807",
+      "https://vl.studieboligaalborg.dk/GetImageEjendom.aspx?n=1718336&r=140&y=3807"
+    ],
+
     detaljerOmBolig: {
       boligtype: "Lejlighed",
       boligarealM2:"80m²",

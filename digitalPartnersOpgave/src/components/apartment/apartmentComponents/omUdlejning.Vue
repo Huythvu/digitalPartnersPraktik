@@ -54,6 +54,12 @@ import { boliger } from "../../../data/data";
     gap: 4rem;
 }
 
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 ul li {
     display: flex;
     justify-content: space-between;

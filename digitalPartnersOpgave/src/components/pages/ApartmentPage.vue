@@ -4,6 +4,7 @@ import introInfo from '../apartment/ApartmentComponents/introInfo.vue';
 import titleAndDescription from '../apartment/ApartmentComponents/titleAndDescription.vue';
 import omBolig from '../apartment/ApartmentComponents/omBolig.vue';
 import omUdlejning from '../apartment/apartmentComponents/omUdlejning.vue';
+import andreBoligerCard from '../apartment/ApartmentComponents/andreBoligerCard.vue';
 import asideOmUdlejeren from '../apartment/ApartmentComponents/asideOmUdlejeren.vue';
 import asideAgent from '../apartment/ApartmentComponents/asideAgent.vue';
 import asideKort from '../apartment/ApartmentComponents/asideKort.vue';
@@ -29,6 +30,9 @@ import asideKort from '../apartment/ApartmentComponents/asideKort.vue';
             <section>
                 <omUdlejning />
             </section>
+            <section>
+                <andreBoligerCard />
+            </section>
         </main>
         <aside>
             <asideAgent />
@@ -47,9 +51,10 @@ import asideKort from '../apartment/ApartmentComponents/asideKort.vue';
     display: flex;
     gap: 4rem;
 
+    margin-bottom: 4rem;
     margin-inline: auto;
     padding-inline: 64px;
-    max-width: 1920px;
+    max-width: 1620px;
 }
 
 section {

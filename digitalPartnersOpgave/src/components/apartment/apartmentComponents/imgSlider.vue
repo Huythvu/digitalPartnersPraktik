@@ -32,18 +32,8 @@ onMounted(() => {
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide">
-        <img src="https://vl.studieboligaalborg.dk/GetImageEjendom.aspx?n=1718328&r=140&y=3807" alt="">
-      </div>
-      <div class="swiper-slide">
-        <img src="https://vl.studieboligaalborg.dk/GetImageEjendom.aspx?n=1718333&r=140&y=3807" alt="">
-      </div>
-
-      <div class="swiper-slide">
-        <img src="https://vl.studieboligaalborg.dk/GetImageEjendom.aspx?n=1718335&r=140&y=3807" alt="">
-      </div>
-      <div class="swiper-slide">
-        <img src="https://vl.studieboligaalborg.dk/GetImageEjendom.aspx?n=1718336&r=140&y=3807" alt="">
+      <div class="swiper-slide" v-for="(image, index) in boliger[0].images" :key="index">
+        <img :src="image" alt="">
       </div>
     </div>
     <!-- If we need pagination -->
