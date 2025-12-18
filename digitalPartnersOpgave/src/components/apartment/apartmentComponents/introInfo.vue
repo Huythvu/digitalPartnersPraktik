@@ -1,5 +1,5 @@
 <script setup>
-    import { boliger } from "../../../data/data";
+import { boliger } from "../../../data/data";
 </script>
 
 <template>
@@ -23,28 +23,32 @@
 </template>
 
 <style scoped>
-.introInfo{
+.introInfo {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
-.priceInfo{
+
+.priceInfo {
     display: flex;
     justify-content: space-between;
     align-items: end;
 }
-.tags{
+
+.tags {
     display: flex;
     gap: 0.5rem;
 }
-.tags p{
+
+.tags p {
     background-color: var(--lightGolden);
     padding: 4px 8px;
     border-radius: 10px;
     font-size: var(--tags);
     font-weight: var(--bold);
 }
-i{
+
+i {
     display: flex;
     align-items: center;
     gap: 8px;
