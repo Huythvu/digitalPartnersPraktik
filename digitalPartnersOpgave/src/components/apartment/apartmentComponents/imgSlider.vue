@@ -1,4 +1,5 @@
 <script setup>
+    import { boliger } from "../../../data/data";
 import { onMounted } from 'vue';
 onMounted(() => {
     const swiper = new Swiper('.swiper', {

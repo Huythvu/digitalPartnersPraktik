@@ -1,11 +1,12 @@
 <script setup>
+    import { boliger } from "../../../data/data";
 </script>
 
 <template>
     <div class="titleAndDesc">
-        <h1>2 Værelses lejlighed i Aalborg Centrum</h1>
+        <h1>{{ boliger[0].title }}</h1>
         <p>
-            Drømmer du om at bo billigt i hjertet af Aalborg.Lille fin lejlighed midt i Aalborg i stille sidegade, men tæt på alt bylivet. Velegnet til rolig studerende. Indeholder stue, værelse, bad, nyrenoveret køkken. Vaskemaskine og tørretumbler. Aflåst opbevaringsrum og cykelrum i kælderen. Hyggelig gårdhave. Lejligheden overtages nymalet.
+            {{ boliger[0].desc }}
         </p>
     </div>
     </template>

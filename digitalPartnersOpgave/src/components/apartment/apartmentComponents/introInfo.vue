@@ -1,5 +1,5 @@
 <script setup>
-    
+    import { boliger } from "../../../data/data";
 </script>
 
 <template>

@@ -35,3 +35,23 @@ a {
         color: #000000;
         font-weight: 700;
     }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+    }
+    h1 {
+        font-size: var(--h1);
+    }
+    h2 {
+        font-size: var(--h2);
+    }
+    h3 {
+        font-size: var(--h3);
+    }
+    p, li{
+        font-size: var(--paragraph);
+        font-weight: var(--regular);
+    }
+    ul{
+      list-style-position: inside;
+    }
