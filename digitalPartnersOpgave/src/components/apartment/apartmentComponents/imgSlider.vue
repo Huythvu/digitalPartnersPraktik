@@ -65,7 +65,6 @@ img{
 .swiper{
     width: 100%;
     margin-top: 16px;
-    margin-bottom: 32px;
 }
 
 .swiper-slide {

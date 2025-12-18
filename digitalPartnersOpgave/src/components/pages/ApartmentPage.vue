@@ -14,18 +14,33 @@ import asideKort from '../apartment/ApartmentComponents/asideKort.vue';
 <template>
     <ImgSlider />
     <main>
-        <introInfo />
-        <titleAndDescription />
-        <omBolig />
-        <omUdlejning />
-        <asideOmUdlejeren />
-        <asideAgent />
-        <asideKort />
+        <div class="container">
+            <section>
+                <introInfo />
+            </section>
+            <section>
+                <titleAndDescription />
+            </section>
+            <section>
+                <omBolig />
+            </section>
+            <section>
+                <omUdlejning />
+            </section>
+            <aside>
+                <asideOmUdlejeren />
+                <asideAgent />
+                <asideKort />
+            </aside>
+        </div>
     </main>
 </template>
 
 <style scoped>
     main{
         margin: 4rem;
+    }
+    section{
+        margin-bottom: 4rem;
     }
 </style>
