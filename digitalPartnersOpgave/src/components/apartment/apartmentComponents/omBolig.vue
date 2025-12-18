@@ -6,19 +6,51 @@
     <div class="detaljerOmBolig">
         <h2>Detaljer om bolig</h2>
         <div class="lists">
-            <ul>
-        <li>Boligtype: {{ boliger[0].detaljerOmBolig.boligtype }}</li>
-        <li>Boligareal: {{ boliger[0].detaljerOmBolig.boligarealM2 }}</li>
-        <li>Antal Værelser: {{ boliger[0].detaljerOmBolig.antalVaerelser }}</li>
-        <li>Etage: {{ boliger[0].detaljerOmBolig.etage }}</li>
-        <li>Energimærke: {{ boliger[0].detaljerOmBolig.energimaerke }}</li>
+    <ul>
+        <li>
+            <span>Boligtype:</span>
+            <span>{{ boliger[0].detaljerOmBolig.boligtype }}</span>
+        </li>
+
+        <li>
+            <span>Boligareal:</span>
+            <span>{{ boliger[0].detaljerOmBolig.boligarealM2 }}</span>
+        </li>
+
+        <li>
+            <span>Antal Værelser:</span>
+            <span>{{ boliger[0].detaljerOmBolig.antalVaerelser }}</span>
+        </li>
+        <li>
+            <span>Etage:</span>
+            <span>{{ boliger[0].detaljerOmBolig.etage }}</span>
+        </li>
+        <li>
+            <span>Energimærke:</span>
+            <span>{{ boliger[0].detaljerOmBolig.energimaerke }}</span>
+        </li>
     </ul>
     <ul>
-        <li>Altan / Terrasse: {{ boliger[0].detaljerOmBolig.altanTerrasse }}</li>
-        <li>Elevator: {{ boliger[0].detaljerOmBolig.elevator }}</li>
-        <li>Parkering: {{ boliger[0].detaljerOmBolig.parkering }}</li>
-        <li>Vaskemaskine: {{ boliger[0].detaljerOmBolig.vaskemaskine }}</li>
-        <li>Husdyr tilladt: {{ boliger[0].detaljerOmBolig.husdyrTilladt }}</li>
+        <li>
+            <span>Altan / Terrasse:</span>
+            <span>{{ boliger[0].detaljerOmBolig.altanTerrasse }}</span>
+        </li>
+        <li>
+            <span>Elevator:</span>
+            <span>{{ boliger[0].detaljerOmBolig.elevator }}</span>
+        </li>
+        <li>
+            <span>Parkering:</span>
+            <span>{{ boliger[0].detaljerOmBolig.parkering }}</span>
+        </li>
+        <li>
+            <span>Vaskemaskine:</span>
+            <span>{{ boliger[0].detaljerOmBolig.vaskemaskine }}</span>
+        </li>
+        <li>
+            <span>Husdyr tilladt:</span>
+            <span>{{ boliger[0].detaljerOmBolig.husdyrTilladt }}</span>
+        </li>
     </ul>
 </div>
 </div>
@@ -33,5 +65,13 @@
     .lists {
         display: flex;
         gap: 4rem;
+    }
+    ul li {
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+    ul li span:first-child {
+        font-weight: var(--bold);
     }
 </style>

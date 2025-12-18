@@ -7,15 +7,36 @@
         <h2>Detaljer om Udlejning</h2>
         <div class="lists">
             <ul>
-        <li>Husleje pr. måned: {{ boliger[0].detaljerOmUdlejning.huslejePrMaaned }}</li>
-        <li>Aconto forbrug: {{ boliger[0].detaljerOmUdlejning.acontoForbrug }}</li>
-        <li>Depositum: {{ boliger[0].detaljerOmUdlejning.depositum }}</li>
-        <li>Forudbetalt leje: {{ boliger[0].detaljerOmUdlejning.forudbetaltLeje }}</li>
+        <li>
+            <span>Husleje pr. måned:</span>
+            <span>{{ boliger[0].detaljerOmUdlejning.huslejePrMaaned }}</span>
+        </li>
+        <li>
+            <span>Aconto forbrug:</span>
+            <span>{{ boliger[0].detaljerOmUdlejning.acontoForbrug }}</span>
+        </li>
+        <li>
+            <span>Depositum:</span>
+            <span>{{ boliger[0].detaljerOmUdlejning.depositum }}</span>
+        </li>
+        <li>
+            <span>Forudbetalt leje:</span>
+            <span>{{ boliger[0].detaljerOmUdlejning.forudbetaltLeje }}</span>
+        </li>
     </ul>
     <ul>
-        <li>Lejeperiode: {{ boliger[0].detaljerOmUdlejning.lejeperiode }}</li>
-        <li>Indflytningsdato: {{ boliger[0].detaljerOmUdlejning.indflytningsdato }}</li>
-        <li>Oprettelsesdato: {{ boliger[0].detaljerOmUdlejning.oprettelsesdato }}</li>
+        <li>
+            <span>Lejeperiode:</span>
+            <span>{{ boliger[0].detaljerOmUdlejning.lejeperiode }}</span>
+        </li>
+        <li>
+            <span>Indflytningsdato:</span>
+            <span>{{ boliger[0].detaljerOmUdlejning.indflytningsdato }}</span>
+        </li>
+        <li>
+            <span>Oprettelsesdato:</span>
+            <span>{{ boliger[0].detaljerOmUdlejning.oprettelsesdato }}</span>
+        </li>
     </ul>
 </div>
 </div>
@@ -30,5 +51,14 @@
     .lists {
         display: flex;
         gap: 4rem;
+    }
+
+    ul li {
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+    ul li span:first-child {
+        font-weight: var(--bold);
     }
 </style>
